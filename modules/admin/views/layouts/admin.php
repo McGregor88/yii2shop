@@ -139,7 +139,7 @@ ltAppAsset::register($this);
         
         <div class="container">
             <?= $content ?>
-        </div>>
+        </div>
 
         <footer id="footer"><!--Footer-->
             <div class="footer-top">
