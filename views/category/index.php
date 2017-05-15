@@ -2,6 +2,7 @@
 /* @var $this yii\web\View */
 use yii\helpers\Html;
 use yii\helpers\Url;
+use app\components\MenuWidget;
 ?>
 <section id="slider"><!--slider-->
     <div class="container">
@@ -75,7 +76,7 @@ use yii\helpers\Url;
                 <div class="left-sidebar">
                     <h2>Category</h2>
                     <ul class="catalog category-products">
-                        <?= \app\components\MenuWidget::widget(['tpl' => 'menu']) ?>
+                        <?= MenuWidget::widget(['tpl' => 'menu']) ?>
                     </ul>
                     <div class="brands_products"><!--brands_products-->
                         <h2>Brands</h2>

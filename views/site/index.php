@@ -75,7 +75,7 @@ $this->title = 'My Yii Application';
                 <div class="left-sidebar">
                     <h2>Category</h2>
                     <ul class="catalog category-products">
-                        <?= \app\components\MenuWidget::widget(['tpl' => 'menu']) ?>
+                        <?= \MenuWidget::widget(['tpl' => 'menu']) ?>
                     </ul>
                     <div class="brands_products"><!--brands_products-->
                         <h2>Brands</h2>
