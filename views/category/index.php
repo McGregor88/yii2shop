@@ -113,12 +113,13 @@ use app\components\MenuWidget;
                 <div class="features_items"><!--features_items-->
                     <h2 class="title text-center">Features Items</h2>
                     <?php foreach($hits as $hit): ?>
+                    <?php $mainImg = $hit->getImage();?>
                     <div class="col-sm-4">
                         <div class="product-image-wrapper">
                             <div class="single-products">
                                 <div class="productinfo text-center">
                                     <a href="<?= Url::to(['product/view', 'id' => $hit->id]) ?>">
-                                        <?= Html::img("@web/images/products/{$hit->img}", ['alt' => $hit->name]) ?>
+                                        <?= Html::img($mainImg->getUrl('268x249'), ['alt' => $hit->name])?>
                                     </a>
                                     <h2>$<?= $hit->price ?></h2>
                                     <p>
